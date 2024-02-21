@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --color-primary-1: #8BC34A;
+    --color-primary-2: #8BC34AA6;
+
+    --color-neutral-1: #f8fafc;
+    --color-neutral-2: #24232b;
+    --color-neutral-3: #13121a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--color-neutral-3);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+#password_img {
+    width: 100px;
+}
+
+#title {
+    color: var(--color-neutral-1);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#password_container {
+    width: 100%;
+    max-width: 400px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-neutral-2);
+    color: var(--color-neutral-1);
+    border-radius: 8px;
+    padding: 8px 18px;
+}
+
+#password_container.show {
+    display: flex;
+}
+
+#password {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#copy {
+    background-color: transparent;
+    border: none;
+    color: var(--color-primary-1);
+    height: 40px;
+    width: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color .4s;
+}
+
+#copy:hover {
+    color: var(--color-primary-2);
+}
+
+#password_items {
+    width: 400px;
+    background-color: var(--color-neutral-2);
+    color: var(--color-neutral-1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 18px;
+}
+
+.item {
+    display: flex;
+    gap: 14px;
+}
+
+#size {
+    width: 50px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+}
+
+#size::-webkit-inner-spin-button,
+#size::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+#size:focus {
+    outline: 1px solid var(--color-primary-1);
+}
+
+#generate {
+    background-color: var(--color-primary-1);
+    border: none;
+    margin-top: 12px;
+    padding: 10px 0px;
+    border-radius: 4px;
+    color: var(--color-neutral-3);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+#generate:hover {
+    background-color: var(--color-primary-2);
+}
