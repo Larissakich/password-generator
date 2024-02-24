@@ -41,7 +41,7 @@ function getPasswordSize() {
     // Validate the size: must be a number between 4 and 128
     if (isNaN(size) || size < 4 || size > 128) {
         // Display an error message if the size is invalid
-        message('Invalid size, please enter a number between 4 and 128!', 'danger');
+        message('Tamanho inválido, digite um número entre 4 e 128!', 'danger');
     }
 
     // Return the validated size
@@ -97,7 +97,7 @@ document.querySelector('#generate').addEventListener('click', function () {
     
     // If no character type is selected, display an error message and return
     if (!charTypes.length) {
-        message('Select at least one character type!', 'danger');
+        message('Selecione pelo menos um tipo de caractere!', 'danger');
         return;
     }
 
@@ -114,5 +114,5 @@ document.querySelector('#copy').addEventListener('click', function () {
     // Copy the generated password to the clipboard
     navigator.clipboard.writeText(document.querySelector('#password').textContent);
     // Display a success message
-    message('Password copied successfully!', 'success');
+    message('Senha copiada com sucesso!', 'success');
 });
