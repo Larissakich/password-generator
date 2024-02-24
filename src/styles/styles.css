@@ -1,5 +1,7 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+/* Define color variables */
 :root {
     --color-primary-1: #8BC34A;
     --color-primary-2: #8BC34AA6;
@@ -9,6 +11,7 @@
     --color-neutral-3: #13121a;
 }
 
+/* Global */
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +27,7 @@ body {
     background-color: var(--color-neutral-3);
 }
 
+/* Container */
 #container {
     display: flex;
     flex-direction: column;
@@ -41,6 +45,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* Password */
 #password_container {
     width: 100%;
     max-width: 400px;
@@ -79,6 +84,7 @@ body {
     color: var(--color-primary-2);
 }
 
+/* Items */
 #password_items {
     width: 400px;
     background-color: var(--color-neutral-2);
